@@ -1,6 +1,7 @@
 \documentclass[a4paper, 11pt]{article}
 \usepackage{graphicx}
 \usepackage{natbib}
+\usepackage{dsfont}
 \usepackage[left=3cm,top=3cm,right=3cm]{geometry}
 
 \renewcommand{\topfraction}{0.85}
@@ -48,6 +49,19 @@ as a function of three spatial coordinates $(x, y, z)$. Call that $\rho(x,y,z)$.
 \right]
 \end{eqnarray}
 This is just a function which has spikes on the particle locations.
+
+We don't know the particle locations, we just have a prior PDF $f$ for the
+positions and the velocities. The expected value of $\rho$ is:
+\begin{eqnarray}
+\mathds{E}\left(\rho(x, y, z; t)\right) &=& m
+\mathds{E}\left(
+\sum_{i=1}^N\left[
+\delta(x - x_i)\delta(y - y_i)\delta(z - z_i)
+\right]
+\right)
+\end{eqnarray}
+Need to show this gives the mixture of all the marginal distributions for the
+positions. Might need to assume exchangeability in $f$, no biggie.
 
 \end{document}
 
