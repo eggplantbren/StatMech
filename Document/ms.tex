@@ -13,11 +13,29 @@
 \begin{document}
 \maketitle
 
-\section{Introduction}
+\section{Notation}
 
+\begin{table}[h!]
+\begin{center}
+\begin{tabular}{|l|c|}
+\hline
+{\bf Quantity} & {\bf Notation}\\
+\hline
+Number of particles & $N$\\
+Coordinates of system & $\mathbf{q}(t)$\\
+Velocities of system  & $\mathbf{v}(t)$\\
+PDF for state of system & $f(\mathbf{q}, \mathbf{v}; t)$\\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+For a system of free particles described in cartesian coordinates, we have:
 \begin{eqnarray}
-H = -\sum p_i \ln\left(\frac{p_i}{q_i}\right)
+\mathbf{q} &=& \{(x_1, y_1, z_1), (x_2, y_2, z_2), ..., (x_N, y_N, z_N)\}\\
+\mathbf{v} &=& \{(v_{x,1}, v_{y,1}, v_{z,1}), (v_{x,2}, v_{y,2}, v_{z,2}), ..., (v_{x,N}, v_{y,N}, v_{z,N})\}\\
 \end{eqnarray}
+where all of this stuff is a function of time.
 
 \end{document}
 
