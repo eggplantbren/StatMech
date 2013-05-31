@@ -30,12 +30,24 @@ PDF for state of system & $f(\mathbf{q}, \mathbf{v}; t)$\\
 \end{center}
 \end{table}
 
+\section{Example System}
+
 For a system of $N$ particles described in cartesian coordinates, we have:
 \begin{eqnarray}
 \mathbf{q} &=& \{(x_1, y_1, z_1), (x_2, y_2, z_2), ..., (x_N, y_N, z_N)\}\\
 \mathbf{v} &=& \{(v_{x,1}, v_{y,1}, v_{z,1}), (v_{x,2}, v_{y,2}, v_{z,2}), ..., (v_{x,N}, v_{y,N}, v_{z,N})\}\\
 \end{eqnarray}
-where all of this stuff is a function of time.
+where all of this stuff is a function of time. Let the mass of each particle be
+$m$ (all the same mass).
+
+The empirical measure of the positions is the REAL, ACTUAL density function
+as a function of three spatial coordinates $(x, y, z)$. Call that $\rho(x,y,z)$.
+\begin{eqnarray}
+\rho(x, y, z; t) &=& m \sum_{i=1}^N\left[
+\delta(x - x_i)\delta(y - y_i)\delta(z - z_i)
+\right]
+\end{eqnarray}
+This is just a function which has spikes on the particle locations.
 
 \end{document}
 
